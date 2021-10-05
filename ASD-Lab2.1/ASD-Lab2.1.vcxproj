@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{11759c36-bc7d-461e-9c38-e18f9428e068}</ProjectGuid>
-    <RootNamespace>ASDLab2</RootNamespace>
+    <ProjectGuid>{41994cb3-cfeb-42d5-926a-a42eae80fe41}</ProjectGuid>
+    <RootNamespace>ASDLab21</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,7 +139,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ASD-Lab2.cpp" />
+    <ClCompile Include="ASD-Lab2.1.cpp" />
+    <ClCompile Include="CalcMethod.cpp" />
+    <ClCompile Include="EratosthenesSieveMethod.cpp" />
+    <ClCompile Include="helpers.cpp" />
+    <ClCompile Include="IsPrimeMethod.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CalcMethod.h" />
+    <ClInclude Include="EratosthenesSieveMethod.h" />
+    <ClInclude Include="helpers.h" />
+    <ClInclude Include="IsPrimeMethod.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
