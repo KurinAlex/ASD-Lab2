@@ -140,6 +140,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ASD-Lab2.1.cpp" />
+    <ClCompile Include="CalcMethod.cpp" />
+    <ClCompile Include="EratosthenesSieveMethod.cpp" />
+    <ClCompile Include="helpers.cpp" />
+    <ClCompile Include="IsPrimeMethod.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CalcMethod.h" />
+    <ClInclude Include="EratosthenesSieveMethod.h" />
+    <ClInclude Include="helpers.h" />
+    <ClInclude Include="IsPrimeMethod.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
