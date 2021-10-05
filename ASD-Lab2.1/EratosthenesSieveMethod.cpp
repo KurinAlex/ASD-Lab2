@@ -5,11 +5,7 @@ EratosthenesSieveMethod::EratosthenesSieveMethod()
 	method_name = "EratosthenesSieve";
 }
 
-int* EratosthenesSieveMethod::Execute(int primes_number)
+int* EratosthenesSieveMethod::Execute(int max_prime)
 {
-	int* primes = new int[primes_number];
-	//
-	// TODO
-	//
-	return primes;
+	return EratosthenesSieve(max_prime);
 }

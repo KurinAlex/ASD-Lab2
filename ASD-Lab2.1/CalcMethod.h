@@ -9,8 +9,8 @@ class CalcMethod
 public:
 	CalcMethod();
 
-	void ExecuteAndCalculateTime(int parameter, int iteration_count);
-	virtual int* Execute(int primes_number) = 0;
+	void ExecuteAndCalculateTime(int parameter, int iterations_number);
+	virtual int* Execute(int parameter) = 0;
 
 protected:
 	const char* method_name;

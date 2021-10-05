@@ -6,5 +6,5 @@ class EratosthenesSieveMethod : public CalcMethod
 public:
 	EratosthenesSieveMethod();
 
-	virtual int* Execute(int primes_number) override;
+	virtual int* Execute(int max_prime) override;
 };
