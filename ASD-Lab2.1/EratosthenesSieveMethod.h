@@ -5,7 +5,6 @@ class EratosthenesSieveMethod : public CalcMethod
 {
 public:
 	EratosthenesSieveMethod();
-	~EratosthenesSieveMethod();
 
-	virtual int* method(int primes_number) override;
+	virtual int* Execute(int primes_number) override;
 };

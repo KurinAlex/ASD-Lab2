@@ -5,12 +5,7 @@ IsPrimeMethod::IsPrimeMethod()
 	method_name = "IsPrime";
 }
 
-IsPrimeMethod::~IsPrimeMethod()
-{
-
-}
-
-int* IsPrimeMethod::method(int primes_number)
+int* IsPrimeMethod::Execute(int primes_number)
 {
 	int* primes = new int[primes_number];
 

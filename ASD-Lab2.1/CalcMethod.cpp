@@ -2,20 +2,15 @@
 
 CalcMethod::CalcMethod()
 {
-
+	method_name = "";
 }
 
-CalcMethod::~CalcMethod()
-{
-
-}
-
-void CalcMethod::OutputExecutionTime(int parameter, int iterations_number)
+void CalcMethod::ExecuteAndCalculateTime(int parameter, int iterations_number)
 {
 	clock_t start = clock();
 	for (int i = 0; i < iterations_number; i++)
 	{
-		method(parameter);
+		Execute(parameter);
 	}
 	clock_t end = clock();
 

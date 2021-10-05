@@ -9,8 +9,8 @@ int main()
 	CalcMethod* is_prime_method = new IsPrimeMethod();
 	CalcMethod* eratosthenes_sieve_method = new EratosthenesSieveMethod();
 
-	is_prime_method->OutputExecutionTime(PRIMES_NUMBER, ITERATIONS_NUMBER);
-	eratosthenes_sieve_method->OutputExecutionTime(PRIMES_NUMBER, ITERATIONS_NUMBER);
+	is_prime_method->ExecuteAndCalculateTime(PRIMES_NUMBER, ITERATIONS_NUMBER);
+	eratosthenes_sieve_method->ExecuteAndCalculateTime(PRIMES_NUMBER, ITERATIONS_NUMBER);
 
 	std::cin.get();
 }

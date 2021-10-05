@@ -5,7 +5,6 @@ class IsPrimeMethod : public CalcMethod
 {
 public:
 	IsPrimeMethod();
-	~IsPrimeMethod();
 
-	virtual int* method(int primes_number) override;
+	virtual int* Execute(int primes_number) override;
 };
