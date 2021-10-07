@@ -2,31 +2,34 @@
 
 const int BITS_NUMBER = 32;
 
-int* IntegetToBinary(int n, int bits_number)
+bool* IntegerToBinary(int n, int bits_number)
 {
-	int* binary = new int[bits_number];
+	bool* binary = new bool[bits_number];
 
 	for (int i = bits_number - 1; i >= 0; n >>= 1, i--)
 	{
-		((n & 1) == 0) ? (binary[i] = 0) : (binary[i] = 1);
+		binary[i] = (n & 1);
 	}
 
 	return binary;
 }
 
-int BinaryToInteger(int* binary, int bits_number)
+int BinaryToInteger(bool* binary, int bits_number)
 {
 	int n = 0;
 
 	for (int i = bits_number - 1, mult = 1; i >= 0; i--, mult <<= 1)
 	{
-		n += binary[i] * mult;
+		if (binary[i])
+		{
+			n += mult;
+		}
 	}
 
 	return n;
 }
 
-void OutputBinary(int* binary, int bits_number)
+void OutputBinary(bool* binary, int bits_number)
 {
 	for (int i = 0; i < bits_number; i++)
 	{
@@ -40,8 +43,9 @@ int main()
 	int n;
 	std::cout << "Enter n:\n";
 	std::cin >> n;
+	std::cin.ignore(INT_MAX, '\n');
 
-	int* binary_n = IntegetToBinary(n, BITS_NUMBER);
+	bool* binary_n = IntegerToBinary(n, BITS_NUMBER);
 
 	std::cout << "n in base 2: ";
 	OutputBinary(binary_n, BITS_NUMBER);
@@ -49,6 +53,5 @@ int main()
 	std::cout << "n in base 10: ";
 	std::cout << BinaryToInteger(binary_n, BITS_NUMBER);
 
-	std::cin.ignore(INT_MAX, '\n');
 	std::cin.get();
 }
