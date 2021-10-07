@@ -4,7 +4,10 @@
 class EratosthenesSieveMethod : public CalcMethod
 {
 public:
-	EratosthenesSieveMethod();
+	EratosthenesSieveMethod(int max_prime);
 
-	virtual int* Execute(int max_prime) override;
+	virtual int* Execute() override;
+
+private:
+	int m_max_prime;
 };
