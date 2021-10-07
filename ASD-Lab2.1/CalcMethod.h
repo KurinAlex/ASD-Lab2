@@ -9,8 +9,8 @@ class CalcMethod
 public:
 	CalcMethod();
 
-	void ExecuteAndCalculateTime(int parameter, int iterations_number);
-	virtual int* Execute(int parameter) = 0;
+	void ExecuteAndCalculateTime(int iterations_number);
+	virtual int* Execute() = 0;
 
 protected:
 	const char* method_name;

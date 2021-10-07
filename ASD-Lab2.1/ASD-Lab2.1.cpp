@@ -7,11 +7,11 @@ const int ITERATIONS_NUMBER = 10000;
 
 int main()
 {
-	CalcMethod* is_prime_method = new IsPrimeMethod();
-	CalcMethod* eratosthenes_sieve_method = new EratosthenesSieveMethod();
+	CalcMethod* is_prime_method = new IsPrimeMethod(PRIMES_NUMBER);
+	CalcMethod* eratosthenes_sieve_method = new EratosthenesSieveMethod(PRIME_100);
 
-	is_prime_method->ExecuteAndCalculateTime(PRIMES_NUMBER, ITERATIONS_NUMBER);
-	eratosthenes_sieve_method->ExecuteAndCalculateTime(PRIME_100, ITERATIONS_NUMBER);
+	is_prime_method->ExecuteAndCalculateTime(ITERATIONS_NUMBER);
+	eratosthenes_sieve_method->ExecuteAndCalculateTime(ITERATIONS_NUMBER);
 
 	std::cin.get();
 }

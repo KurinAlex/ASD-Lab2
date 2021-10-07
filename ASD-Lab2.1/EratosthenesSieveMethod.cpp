@@ -1,11 +1,12 @@
 #include "EratosthenesSieveMethod.h"
 
-EratosthenesSieveMethod::EratosthenesSieveMethod()
+EratosthenesSieveMethod::EratosthenesSieveMethod(int max_prime)
 {
 	method_name = "EratosthenesSieve";
+	m_max_prime = max_prime;
 }
 
-int* EratosthenesSieveMethod::Execute(int max_prime)
+int* EratosthenesSieveMethod::Execute()
 {
-	return EratosthenesSieve(max_prime);
+	return EratosthenesSieve(m_max_prime);
 }

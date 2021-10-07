@@ -4,7 +4,10 @@
 class IsPrimeMethod : public CalcMethod
 {
 public:
-	IsPrimeMethod();
+	IsPrimeMethod(int primes_number);
 
-	virtual int* Execute(int primes_number) override;
+	virtual int* Execute() override;
+
+private:
+	int m_primes_number;
 };
