@@ -1,3 +1,5 @@
+#include <iostream>
+
 #include"helpers.h"
 
 int EnterInteger(const char* integer_name)

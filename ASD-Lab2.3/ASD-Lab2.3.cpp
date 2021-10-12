@@ -1,4 +1,6 @@
-﻿#include "helpers.h"
+﻿#include <iostream>
+
+#include "helpers.h"
 
 void OutputRange(int A, int B)
 {
