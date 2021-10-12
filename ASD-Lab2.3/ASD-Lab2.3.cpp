@@ -1,4 +1,4 @@
-﻿#include <iostream>
+﻿#include "helpers.h"
 
 void OutputRange(int A, int B)
 {
@@ -19,6 +19,10 @@ void OutputRange(int A, int B)
 
 int main()
 {
-	OutputRange(8, -1);
+	int A = EnterInteger("A");
+	int B = EnterInteger("B");
+
+	OutputRange(A, B);
+
 	std::cin.get();
 }
