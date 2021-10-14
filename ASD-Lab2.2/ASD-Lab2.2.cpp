@@ -1,4 +1,5 @@
 ﻿#include <iostream>
+#include <windows.h>
 
 #include "helpers.h"
 
@@ -42,14 +43,17 @@ void OutputBinary(bool* binary, int bits_number)
 
 int main()
 {
+	SetConsoleCP(1251);
+	SetConsoleOutputCP(1251);
+
 	int n = EnterInteger("n");
 
 	bool* binary_n = IntegerToBinary(n, BITS_NUMBER);
 
-	std::cout << "n in base 2: ";
+	std::cout << "n у двійковій системі числення: ";
 	OutputBinary(binary_n, BITS_NUMBER);
 
-	std::cout << "n in base 10: ";
+	std::cout << "n у десятковій системі числення: ";
 	std::cout << BinaryToInteger(binary_n, BITS_NUMBER);
 
 	std::cin.get();

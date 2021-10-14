@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 
 #include"helpers.h"
 
@@ -9,7 +9,7 @@ int EnterInteger(const char* integer_name)
 	bool isFailure = true;
 	do
 	{
-		std::cout << "Enter " << integer_name << ": ";
+		std::cout << "Введіть " << integer_name << ": ";
 		std::cin >> number;
 		isFailure = std::cin.fail();
 

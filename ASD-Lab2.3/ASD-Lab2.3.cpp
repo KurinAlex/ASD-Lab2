@@ -1,4 +1,5 @@
 ﻿#include <iostream>
+#include <windows.h>
 
 #include "helpers.h"
 
@@ -21,6 +22,9 @@ void OutputRange(int A, int B)
 
 int main()
 {
+	SetConsoleCP(1251);
+	SetConsoleOutputCP(1251);
+
 	int A = EnterInteger("A");
 	int B = EnterInteger("B");
 
