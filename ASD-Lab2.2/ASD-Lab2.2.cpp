@@ -1,5 +1,7 @@
 ﻿#include <iostream>
 
+#include "helpers.h"
+
 const int BITS_NUMBER = 32;
 
 bool* IntegerToBinary(int n, int bits_number)
@@ -40,10 +42,7 @@ void OutputBinary(bool* binary, int bits_number)
 
 int main()
 {
-	int n;
-	std::cout << "Enter n:\n";
-	std::cin >> n;
-	std::cin.ignore(INT_MAX, '\n');
+	int n = EnterInteger("n");
 
 	bool* binary_n = IntegerToBinary(n, BITS_NUMBER);
 
