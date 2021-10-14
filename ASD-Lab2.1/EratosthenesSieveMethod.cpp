@@ -1,4 +1,4 @@
-#include "EratosthenesSieveMethod.h"
+﻿#include "EratosthenesSieveMethod.h"
 
 EratosthenesSieveMethod::EratosthenesSieveMethod(int max_prime)
 {

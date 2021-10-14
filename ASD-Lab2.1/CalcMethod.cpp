@@ -1,4 +1,4 @@
-#include "CalcMethod.h"
+﻿#include "CalcMethod.h"
 
 CalcMethod::CalcMethod()
 {
