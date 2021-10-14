@@ -9,7 +9,7 @@ int EnterInteger(const char* integer_name)
 	bool isFailure = true;
 	do
 	{
-		std::cout << "Ââåä³òü " << integer_name << ": ";
+		std::cout << "Ğ’Ğ²ĞµĞ´Ñ–Ñ‚ÑŒ " << integer_name << ": ";
 		std::cin >> number;
 		isFailure = std::cin.fail();
 

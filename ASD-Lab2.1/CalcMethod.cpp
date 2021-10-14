@@ -14,6 +14,6 @@ void CalcMethod::ExecuteAndCalculateTime(int iterations_number)
 	}
 	clock_t end = clock();
 
-	std::cout << "×àñ âèêîíàííÿ ôóíêö³¿ " << method_name << ' ' << iterations_number <<
-		" ðàç³â: " << (float)(end - start) / CLOCKS_PER_SEC << " ñåêóíä\n";
+	std::cout << "Ð§Ð°Ñ Ð²Ð¸ÐºÐ¾Ð½Ð°Ð½Ð½Ñ Ñ„ÑƒÐ½ÐºÑ†Ñ–Ñ— " << method_name << ' ' << iterations_number <<
+		" Ñ€Ð°Ð·Ñ–Ð²: " << (float)(end - start) / CLOCKS_PER_SEC << " ÑÐµÐºÑƒÐ½Ð´\n";
 }
