@@ -2,7 +2,7 @@
 
 EratosthenesSieveMethod::EratosthenesSieveMethod(int max_prime)
 {
-	method_name = "EratosthenesSieve";
+	method_name = "Решето Ератосфена";
 	m_max_prime = max_prime;
 }
 

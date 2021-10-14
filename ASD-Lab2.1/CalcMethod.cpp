@@ -14,6 +14,6 @@ void CalcMethod::ExecuteAndCalculateTime(int iterations_number)
 	}
 	clock_t end = clock();
 
-	std::cout << "Execution time of " << method_name << " function " << iterations_number <<
-		" times: " << (float)(end - start) / CLOCKS_PER_SEC << " seconds\n";
+	std::cout << "Час виконання функції " << method_name << ' ' << iterations_number <<
+		" разів: " << (float)(end - start) / CLOCKS_PER_SEC << " секунд\n";
 }
