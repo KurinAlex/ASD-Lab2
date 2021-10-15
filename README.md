@@ -21,6 +21,6 @@ In tasks where any variables are entered, their setting is necessary to implemen
     1) Implement the boolean function bool isPrime(int n), which checks the input number n for checking whether it is prime using the simple search of divisors.
     2) Implement the algorithm "Sieve of Eratosthenes" to find all prime numbers in the range from 1 to N.
     3) Solve the given task in 2 ways: with function isPrime() and with the sieve of Eratosthenes, to measure and deduce time execution of each decision.
-2. Write a function to convert a natural decimal number to 2nd number system, and a function for reverse translation. Test on a few examples.
+2. Write a function to convert a natural decimal number to binary system, and a function for reverse translation. Test on a few examples.
 3. Given two integers A and B. Print all numbers from A to B inclusive, in ascending order, if A <B, or in descending order in another case, 
 using recursion (without the use of loops).
